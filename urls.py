@@ -1,0 +1,35 @@
+from django.urls import path
+from frontend import views
+urlpatterns=[
+    path('homepage/',views.homepage,name="homepage"),
+    path('categorypage/',views.categorypage,name="categorypage"),
+    path('joblisting/',views.joblisting,name="joblisting"),
+    path('joblisting/<job_name>/', views.joblisting, name="joblisting"),
+    path('jobdetails/<int:jobid>', views.jobdetails, name="jobdetails"),
+    path('alljobs/', views.alljobs, name="alljobs"),
+    path('aboutpage/', views.aboutpage, name="aboutpage"),
+    path('aboutpagetwo/', views.aboutpagetwo, name="aboutpagetwo"),
+    path('servicepage/', views.servicepage, name="servicepage"),
+    path('servicepage/', views.servicepage, name="servicepage"),
+    path('contactpage/', views.contactpage, name="contactpage"),
+    path('savecontact/', views.savecontact, name="savecontact"),
+    path('jobpostpage/', views.jobpostpage, name="jobpostpage"),
+    path('savepostjob/', views.savepostjob, name="savepostjob"),
+    path('signinpage/', views.signinpage, name="signinpage"),
+    path('loginpage/', views.loginpage, name="loginpage"),
+    path('savesignin/', views.savesignin, name="savesignin"),
+    path('userlogin/', views.userlogin, name="userlogin"),
+    path('userlogout/', views.userlogout, name="userlogout"),
+    path('saveapplication/', views.saveapplication, name="saveapplication"),
+    path('blogpage/', views.blogpage, name="blogpage"),
+    path('blogcontent/<int:blogid>', views.blogcontent, name="blogcontent"),
+    path('payment/', views.payment, name="payment"),
+    path('gpay/', views.gpay, name="gpay"),
+    path('success/', views.success, name="success"),
+    path('submissionpage/', views.submissionpage, name="submissionpage"),
+    path('jobapplicationsubmission/', views.jobapplicationsubmission, name="jobapplicationsubmission"),
+    path('locationsearch/', views.locationsearch, name="locationsearch"),
+    path('searchjoblisting/<job_name>/', views.searchjoblisting, name="searchjoblisting"),
+    path('abc/', views.abc, name="abc")
+
+]
